@@ -5,8 +5,9 @@ const _ = require('underscore');
 const Usuario = require('../models/usuario');
 
 const app = express();
-app.get('/', (req, res) => {
-    res.render("OSCAR JIMÉNEZ - PRUEBA 2 - REST FULL VENTA DE IMPRESORAS")
+
+app.get('/', function (req, res) {
+  res.send('OSCAR JIMÉNEZ - PRUEBA 2 - REST FULL VENTA DE IMPRESORAS')
 })
 
 app.get('/impresora', (req, res) => {
